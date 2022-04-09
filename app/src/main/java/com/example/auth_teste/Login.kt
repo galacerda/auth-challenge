@@ -62,7 +62,7 @@ class Login : AppCompatActivity() {
     private fun validEmail(): String? {
         val emailText = binding.emailEditText.text.toString()
         if(!Patterns.EMAIL_ADDRESS.matcher(emailText).matches()) {
-            return "Invalid Email Address"
+            return "Email inválido"
         }
         return null
     }
