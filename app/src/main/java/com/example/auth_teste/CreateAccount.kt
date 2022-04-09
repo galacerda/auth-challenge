@@ -100,7 +100,7 @@ class CreateAccount : AppCompatActivity() {
         if(validatedEmail && validatedPassowrd && validatedPasswordMatch ){
             createAccount(binding.emailEditText.text.toString() , binding.passwordEditText.text.toString())
         }else{
-            AlertDialog.Builder(this).setTitle("Dados invalidos").setMessage("Corriga os dados incorretos para prosseguir").setPositiveButton("Okay"){_,_->
+            AlertDialog.Builder(this).setTitle("Dados invalidos").setMessage("Insira dados válidos para prosseguir.").setPositiveButton("Okay"){_,_->
                 //vai faze nada n
             }.show()
         }
